@@ -1,0 +1,14 @@
+name: LabyModCS
+version: 1.3
+main: dev.timecoding.labymodcs.CustomSubtitles
+authors: [ TimeCoding ]
+description: A Plugin which allows to create custom subtitles without the LabyMod API!
+website: timecoding.de
+softdepend:
+  - PlaceholderAPI
+
+commands:
+  labymodsubtitle:
+    description: The main command for using the LabyMod-Subtitle Plugin!
+    aliases:
+      - lst
