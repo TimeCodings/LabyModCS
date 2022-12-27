@@ -46,6 +46,33 @@ Du kannst die API benutzen wenn du das Plugin in die Build Path deiner Entwicklu
 
 Wichtig: Damit du die API nutzen kannst muss logischerweise auch das Plugin auf deinem Server sein!
 
+**Beispiel:**
+
+	public void APIOptions(){
+		//Get Amount of Subtitles
+		CustomSubtitleAPI.getSubtitleSize();
+		//Get All Subtitle Texts
+		CustomSubtitleAPI.getSubtitles();
+		//Delete Subtitle with ID
+		CustomSubtitleAPI.deleteSubtitle(ID);
+		//Get Text from Subtitle from Player by Player-UUID
+		CustomSubtitleAPI.getPlayerSubtitleName(PLAYERUUID);
+		//Get ID from Subtitle from Player by Player-UUID
+		CustomSubtitleAPI.getPlayerSubtitleID(PLAYERUUID);
+		//Create a subtitle with text
+		CustomSubtitleAPI.createSubtitle(TEXT);
+		//Set a subtitle with id to player with name
+		CustomSubtitleAPI.setSubtitle(PLAYERNAME, ID);
+		//Set permission for subtitle with id
+		CustomSubtitleAPI.setPerm(ID, PERMISSION);
+		//Remove permission from subtitle with id
+		CustomSubtitleAPI.removePerm(ID);
+		//Get subtitle text from subtitle with id
+		CustomSubtitleAPI.getSubtitleName(ID);
+		//Remove subtitle from player with name
+		CustomSubtitleAPI.removeSubtitle(PLAYERNAME);
+	}
+
 --------------------------------------------------------------------------------------------------
 
 *English:*
@@ -92,3 +119,30 @@ You can use the API when you put the plugin in the your build path!
 Make CustomSubtitleAPI. and you can see all things you can use!
 
 Important: For using the API, the API also need to be on your Minecraft-Server!
+
+**Example:**
+
+	public void APIOptions(){
+		//Get Amount of Subtitles
+		CustomSubtitleAPI.getSubtitleSize();
+		//Get All Subtitle Texts
+		CustomSubtitleAPI.getSubtitles();
+		//Delete Subtitle with ID
+		CustomSubtitleAPI.deleteSubtitle(ID);
+		//Get Text from Subtitle from Player by Player-UUID
+		CustomSubtitleAPI.getPlayerSubtitleName(PLAYERUUID);
+		//Get ID from Subtitle from Player by Player-UUID
+		CustomSubtitleAPI.getPlayerSubtitleID(PLAYERUUID);
+		//Create a subtitle with text
+		CustomSubtitleAPI.createSubtitle(TEXT);
+		//Set a subtitle with id to player with name
+		CustomSubtitleAPI.setSubtitle(PLAYERNAME, ID);
+		//Set permission for subtitle with id
+		CustomSubtitleAPI.setPerm(ID, PERMISSION);
+		//Remove permission from subtitle with id
+		CustomSubtitleAPI.removePerm(ID);
+		//Get subtitle text from subtitle with id
+		CustomSubtitleAPI.getSubtitleName(ID);
+		//Remove subtitle from player with name
+		CustomSubtitleAPI.removeSubtitle(PLAYERNAME);
+	}
